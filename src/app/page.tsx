@@ -29,7 +29,7 @@ function Home() {
                     }} />
                 <button onClick={async () => {
                     await updateUsername.mutateAsync({ id: 1, userName: userName })
-                    refetch()
+                    void refetch()
                 }}>
                     Add Username
                 </button>
