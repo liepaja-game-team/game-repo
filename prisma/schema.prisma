@@ -15,6 +15,9 @@ datasource db {
 }
 
 model session {
-  id       Int    @id @default(autoincrement())
-  userName String @db.VarChar(32)
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  userName  String?  @db.VarChar(32)
+  isActive  Boolean  @default(true)
+  score     Int      @default(0)
 }
