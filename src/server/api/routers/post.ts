@@ -16,6 +16,17 @@ export const postRouter = createTRPCRouter({
       };
     }),
 
+  testDb: publicProcedure
+    .input(z.object({ sessionId: z.number() }))
+    .query(async ({ input, ctx }) => {
+      const testSession = await ctx.db.session.findFirst({
+        where: {
+          id: input.sessionId
+        }
+      })
+      return testSession
+    }),
+
   create: publicProcedure
     .input(z.object({ name: z.string().min(1) }))
     .mutation(async ({ input }) => {
