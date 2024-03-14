@@ -9,7 +9,7 @@ export default async function Header() {
             <div className="container mx-auto xl:max-w-6xl flex justify-between items-center">
                 <Link href={`/`} className="block">
                     <h1 className='text-2xl sm:text-3xl md:text-4xl text-h1 flex items-center gap-2 md:gap-4'>
-                        Liepaja Game
+                        Liepājas Līgas 
                     </h1>
                 </Link>
                 <nav>
