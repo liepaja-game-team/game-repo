@@ -63,7 +63,7 @@ export const sessionRouter = createTRPCRouter({
             const allNumbers = Array.from({ length: 12 }, (_, index) => index + 1);
             const availableNumbers = allNumbers.filter(num => !completedGameNumbers.has(num));
             const randomIndex = Math.floor(Math.random() * availableNumbers.length);
-            const randomNumber = availableNumbers[randomIndex]as number;
+            const randomNumber = availableNumbers[randomIndex]!;
             completedGameNumbers.add(randomNumber);
             if ((Array.from(completedGameNumbers)).length > 4){
                 return {
