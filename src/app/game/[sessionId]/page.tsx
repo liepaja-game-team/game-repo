@@ -12,7 +12,8 @@ function SessionPage({ params }: { params: { sessionId: string } }) {
     const setRefetch = useGameStore(state => state.setRefetch)
 
     const { data: gameIdData, error, isError, refetch } = api.game.getNewGame.useQuery({ sessionId: +params.sessionId }, {
-        retry: false
+        retry: false,
+        refetchOnWindowFocus: false
     })
 
     if (isError) {
