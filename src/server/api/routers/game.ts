@@ -51,7 +51,9 @@ export const gameRouter = createTRPCRouter({
                 },
                 select: {
                     scores: true,
-                    completed_games: true
+                    completed_games: true,
+                    latestScoreTime: true,
+                    totalScore: true
                 }
             })
             if (!session) {
@@ -69,11 +71,18 @@ export const gameRouter = createTRPCRouter({
 
             const gameFile = await getGameFileById(input.gameId)
             const rightAnswerIndex = matter(gameFile).data.right_answer
-            const score = rightAnswerIndex === input.answerIndex ? 200 : 0
+
+            const currentTime = new Date()
+            const timeSpent = currentTime.getTime() - session.latestScoreTime.getTime()
+            const scoreFine = .002 * Math.max((timeSpent - 60), 0)
+
+            const score = rightAnswerIndex === input.answerIndex ? 200 - scoreFine : 0
 
             const updatedSession = await ctx.db.session.update({
                 data: {
-                    scores: [...session.scores, score]
+                    scores: [...session.scores, score],
+                    totalScore: session.totalScore + score,
+                    latestScoreTime: new Date()
                 },
                 where: {
                     id: input.sessionId

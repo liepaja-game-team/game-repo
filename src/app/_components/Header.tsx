@@ -9,12 +9,13 @@ export default async function Header() {
             <div className="container mx-auto xl:max-w-6xl flex justify-between items-center">
                 <Link href={`/`} className="block">
                     <h1 className='text-2xl sm:text-3xl md:text-4xl text-h1 flex items-center gap-2 md:gap-4'>
-                        Liepājas Līgas 
+                        Liepājas Līgas
                     </h1>
                 </Link>
                 <nav>
                     <ul className="flex gap-x-6 text-xl items-center">
-                        {/* <li><A noIcon href={`/${params.lang}/tasks`}>{header.tasks}</A></li> */}
+                        <li><A noIcon href={`/leaderboard`}>Top 10</A></li>
+                        <li><A noIcon href={`/about`}>Par spēli</A></li>
                         <li className="text-4xl">
                             <Link
                                 className="text-primary opacity-75 hover:text-primary 

@@ -59,4 +59,14 @@ export const sessionRouter = createTRPCRouter({
             })
             return testSession
         }),
+    getTop10: publicProcedure
+        .query(async ({ ctx }) => {
+            const topSessions = await ctx.db.session.findMany({
+                take: 10,
+                orderBy: {
+                    totalScore: "desc"
+                }
+            })
+            return topSessions
+        }),
 });
