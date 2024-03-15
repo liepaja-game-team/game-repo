@@ -23,16 +23,31 @@ export const sessionRouter = createTRPCRouter({
                     id: input.id
                 }
             })
-            if (session?.userName == null) {
-                await ctx.db.session.update({
-                    data: {
-                        userName: input.userName
-                    },
-                    where: {
-                        id: input.id
-                    }
+            if (!session) {
+                return new TRPCError({
+                    code: "NOT_FOUND",
+                    message: "Session with provided id was not found."
                 })
             }
+            if (!session.isActive) {
+                return new TRPCError({
+                    code: "BAD_REQUEST",
+                    message: "Session is not active"
+                })
+            }
+            const updatedSession = await ctx.db.session.update({
+                data: {
+                    userName: input.userName,
+                    isActive: false
+                },
+                where: {
+                    id: input.id
+                },
+                select: {
+                    userName: true
+                }
+            })
+            return updatedSession
         }),
     getById: publicProcedure
         .input(z.object({ sessionId: z.number() }))

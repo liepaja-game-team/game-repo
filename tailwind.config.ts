@@ -21,6 +21,7 @@ export default {
         link: 'var(--color-link)',
         "link-active": 'var(--color-link-active)',
         info: 'var(--color-info)',
+        error: 'var(--color-error)',
       }
     },
   },

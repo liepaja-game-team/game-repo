@@ -36,6 +36,7 @@
             --color-link: #ffb85a;
             --color-link-active: #8be9dd;
             --color-info: hsl(212, 100%, 60%);
+            --color-error: #ff2b2b;
         }
     }
     @media(prefers-color-scheme: light) {
@@ -52,6 +53,7 @@
             --color-link: hsl(34, 95%, 45%);
             --color-link-active: hsl(172, 68%, 45%);
             --color-info: hsl(212, 100%, 55%);
+            --color-error: #e00c0c;
         }
     }
 }

@@ -23,6 +23,21 @@ export const gameRouter = createTRPCRouter({
                 title: taskData.data["title"]
             }
         }),
+    getTitleById: publicProcedure
+        .input(z.object({ gameId: z.number() }))
+        .mutation(async ({ ctx, input }) => {
+            const game = await getGameFileById(input.gameId)
+            if (!game) {
+                throw new TRPCError({
+                    code: "NOT_FOUND",
+                    message: "Task with specified id was not found"
+                })
+            }
+            const taskData = matter(game)
+            return {
+                title: taskData.data["title"]
+            }
+        }),
     sendAnswer: publicProcedure
         .input(z.object({
             sessionId: z.number(),
@@ -45,7 +60,7 @@ export const gameRouter = createTRPCRouter({
 
             if (!session) {
                 throw new TRPCError({
-                    code: "BAD_REQUEST",
+                    code: "NOT_FOUND",
                     message: "Session with provided id was not found."
                 })
             }

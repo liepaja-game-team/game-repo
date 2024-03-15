@@ -1,5 +1,6 @@
 import { api } from "~/trpc/react"
 import useGameStore from "../gameStore"
+import { redirect } from "next/navigation"
 
 type AnswerPickerProps = {
     answers: string[],
@@ -9,6 +10,7 @@ function AnswerPicker({ answers }: AnswerPickerProps) {
     const gameId = useGameStore(state => state.gameId)
     const sessionId = useGameStore(state => state.sessionId)
     const refetch = useGameStore(state => state.refetch)
+    const isLast = useGameStore(state => state.isLast)
     return (
         <div className="grid grid-cols-2 grid-rows-2 w-full gap-4 pt-10" >
             {answers.map((answer, i) => {
@@ -16,6 +18,9 @@ function AnswerPicker({ answers }: AnswerPickerProps) {
 
                 async function HandleAnswerButtonClick() {
                     await sendAnswerMutation.mutateAsync({ sessionId: sessionId, gameId: gameId, answerIndex: i })
+                    if (isLast) {
+                        redirect(`/game/${sessionId}/game_end`)
+                    }
                     refetch()
                 }
                 return <AnswerButton onClick={HandleAnswerButtonClick} >{answer}</AnswerButton>
