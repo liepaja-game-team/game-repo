@@ -11,7 +11,7 @@ export default function MainButton(props: MainButtonProps) {
 
     return (
         <Link href={href} {...rest}
-            className={`text-2xl relative w-64 ${className}`}
+            className={`text-2xl relative w-64 ${className} h-full`}
         >
             <div className="pl-8 justify-between text-2xl flex items-center bg-info
                 relative hover:translate-y-0.5 active:translate-y-1.5 transition-transform duration-200">
