@@ -1,6 +1,7 @@
 "use client";
 
 import { api } from "~/trpc/react";
+import calcSessionTimeString from "~/utils/calcSessionTime";
 
 function Leaderboard() {
     const { data: top10, isLoading } = api.session.getTop10.useQuery()
@@ -22,9 +23,7 @@ function Leaderboard() {
                     <th>Laiks</th>
                 </thead>
                 {top10.map(session => {
-                    const timePlayed = session.latestScoreTime.getTime() - session.createdAt.getTime()
-                    const minutes = Math.floor(timePlayed / 1000 / 60)
-                    const seconds = Math.floor(timePlayed / 1000) - minutes * 60
+                    const timeString = calcSessionTimeString(session.latestScoreTime, session.createdAt)
                     return <tbody>
                         <td className="text-h2">
                             {session.userName ?? "Nezināms Lietotājs"}
@@ -32,7 +31,7 @@ function Leaderboard() {
                         <td>
                             <span className="text-active">{session.totalScore}</span>/800
                         </td>
-                        <td>{minutes} minūtes {seconds} sekndes</td>
+                        <td>{timeString}</td>
                     </tbody>
                 })}
             </table>
