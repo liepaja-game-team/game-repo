@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Liepaja Game",
-  description: "Quiz game about Liepaja",
+  title: "Liepājas Līgas",
+  description: "Quiz spēle par Liepāju",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
