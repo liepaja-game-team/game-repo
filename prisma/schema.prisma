@@ -15,10 +15,10 @@ datasource db {
 }
 
 model session {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  userName  String?  @db.VarChar(32)
-  isActive  Boolean  @default(true)
-  score     Int      @default(0)
-  completed_games Int[] @default([])
+  id              Int      @id @default(autoincrement())
+  createdAt       DateTime @default(now())
+  userName        String?  @db.VarChar(32)
+  isActive        Boolean  @default(true)
+  scores          Int[]    @default([])
+  completed_games Int[]    @default([])
 }
