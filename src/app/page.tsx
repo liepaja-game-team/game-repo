@@ -11,7 +11,7 @@ function Home() {
                 <p className="text-center">Spēlē par Liepāju</p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
                 <MainButton href="/game">
                     Sākt spēli
                 </MainButton>
