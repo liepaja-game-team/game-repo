@@ -24,7 +24,7 @@ function Leaderboard() {
                 </thead>
                 {top10.map(session => {
                     const timeString = calcSessionTimeString(session.latestScoreTime, session.createdAt)
-                    return <tbody>
+                    return <tbody key={session.id}>
                         <td className="text-h2">
                             {session.userName ?? "Nezināms Lietotājs"}
                         </td>
