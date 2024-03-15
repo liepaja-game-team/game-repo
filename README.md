@@ -1,6 +1,10 @@
 # Liepājas Līgas
 
-Liepājas Līgas ir quiz spēlē, kur spēlētājam ir jāatbild uz jautājumiem par Liepāju. Tagad ir pieejami 12 uzdevumi, kuras teksti atordas mapē `tasks`.
+Liepājas Līgas ir quiz spēlē, kur spēlētājam ir jāatbild uz jautājumiem par Liepāju. Spēli varat izmeģināt [šeit](https://liepaja-game.vercel.app/).
+
+## Uzdevumi
+
+Tagad ir pieejami 12 uzdevumi, kuras teksti atordas mapē `tasks`.
 
 ## Noteikumi
 
