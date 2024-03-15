@@ -13,10 +13,10 @@
 
 **V4. (Kopā 2 punkti)**: 
 
-- [ ] (1 punkts)** Lietotājam (a) piespiežot pogu “Sākt spēli”, atveras logs ar tortes attēlu. Vai: (b) piespiežot spēles sākšanas taustiņu, ekrānā tiek uzzīmēta torte;
-- [ ] **(1 punkts)** Abos gadījumos ekrānā lietotājam ir iespēja izvēlēties kādu no tortes elementiem (odziņa, augļa šķēlīte, dekorējums u.tml.)
+- [x] (1 punkts)** Lietotājam (a) piespiežot pogu “Sākt spēli”, atveras logs ar tortes attēlu. Vai: (b) piespiežot spēles sākšanas taustiņu, ekrānā tiek uzzīmēta torte;
+- [x] **(1 punkts)** Abos gadījumos ekrānā lietotājam ir iespēja izvēlēties kādu no tortes elementiem (odziņa, augļa šķēlīte, dekorējums u.tml.)
 
-- [ ] **V5. (2 punkti)** Izvēloties kādu no tortes elementiem, spēlētājam jāveic kāds uzdevums – interaktīva animācija, tests, jautājums, kam jāiesniedz pareizā atbilde, vai cita aktivitāte.
+- [x] **V5. (2 punkti)** Izvēloties kādu no tortes elementiem, spēlētājam jāveic kāds uzdevums – interaktīva animācija, tests, jautājums, kam jāiesniedz pareizā atbilde, vai cita aktivitāte.
 
 - [x] **P1. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas pēdas Latvijā”. Spēles scenārijs ir autoru izvēle.
 
@@ -42,7 +42,7 @@
 
 - [x] **P12.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja un Eiropa”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **V6. (2 punkti)** Programma neļauj lietotājam tortes gabaliņu, kas vienreiz jau paņemts.
+- [x] **V6. (2 punkti)** Programma neļauj lietotājam tortes gabaliņu, kas vienreiz jau paņemts.
 
 - [x] **V7. (2 punkti)** Testa uzdevumus un atbilžu variantus (ja tādi paredzēti) programma nolasa no faila vai datubāzes.
 
@@ -63,13 +63,13 @@
 
 - [x] **P15.(2 punkti)** Spēles noslēgumā programma izvada statistikas datus par spēli pēc autora(-u) ieskatiem.
 
-- [ ] **P16.(2 punkti)** Spēles noslēgumā programma izvada reālo laiku minūtēs un sekundēs, cik ilgi spēlētājs pavadījis spēlē.
+- [x] **P16.(2 punkti)** Spēles noslēgumā programma izvada reālo laiku minūtēs un sekundēs, cik ilgi spēlētājs pavadījis spēlē.
 
 - [X] **P17.(1 punkts)** Spēles noslēgumā spēlētājam tiek pajautāts ievadīt vārdu.
 
 - [x] **P18.(2 punkti)** Spēlētāja vārds un spēles rezultāti (laiks, punkti u.c.) tiek saglabāti teksta failā vai datu bāzē.
 
-- [ ] **P19.(2 punkti)** Programma nodrošina lietotājam iespēju apskatīties 10 labākos spēles rezultātus – spēlētāja vārds, spēles laiks (minūtēs un sekundes) un punkti – sakārtotus pēc spēles laika augošā secībā.
+- [x] **P19.(2 punkti)** Programma nodrošina lietotājam iespēju apskatīties 10 labākos spēles rezultātus – spēlētāja vārds, spēles laiks (minūtēs un sekundes) un punkti – sakārtotus pēc spēles laika augošā secībā.
 
-- [ ] **P20.(2 punkti)** Spēlētājam tiek nodrošināta iespēja jebkurā spēles brīdī lasīt spēles noteikumus.
+- [x] **P20.(2 punkti)** Spēlētājam tiek nodrošināta iespēja jebkurā spēles brīdī lasīt spēles noteikumus.
 
