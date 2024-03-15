@@ -1,18 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import { redirect } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SecondaryButton from "~/app/_components/SecondaryButton";
 import H1 from "~/app/_components/mdx/H1";
-import H2 from "~/app/_components/mdx/H2";
 import { api } from "~/trpc/react"
 import calcSessionTimeString from "~/utils/calcSessionTime";
+import useGameStore from "../gameStore";
 
 function UsernamePage({ params }: { params: { sessionId: string } }) {
     const [error, setError] = useState("")
     const { data: sessionData, isLoading } = api.session.getById.useQuery({ sessionId: +params.sessionId })
     const addUserNameMutation = api.session.addUserName.useMutation()
+    const resetCakeSlices = useGameStore(state => state.resetCakeSlices)
+
+    useEffect(() => {
+        resetCakeSlices()
+    }, [])
 
     if (isLoading) {
         return <div>Loading</div>
