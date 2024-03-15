@@ -12,6 +12,8 @@ function AnswerPicker({ answers }: AnswerPickerProps) {
     const sessionId = useGameStore(state => state.sessionId)
     const refetch = useGameStore(state => state.refetch)
     const isLast = useGameStore(state => state.isLast)
+    const setShowQuestion = useGameStore(state => state.setShowQuestion)
+    const resetCakeSlices = useGameStore(state => state.resetCakeSlices)
     const router = useRouter()
 
     return (
@@ -20,9 +22,11 @@ function AnswerPicker({ answers }: AnswerPickerProps) {
                 const sendAnswerMutation = api.game.sendAnswer.useMutation()
 
                 async function HandleAnswerButtonClick() {
+                    setShowQuestion(false)
                     await sendAnswerMutation.mutateAsync({ sessionId: sessionId, gameId: gameId, answerIndex: i })
                     if (isLast) {
                         router.push(`/game/${sessionId}/game_end`)
+                        resetCakeSlices()
                         return
                     }
                     refetch()

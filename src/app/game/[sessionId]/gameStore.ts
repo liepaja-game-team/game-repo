@@ -9,6 +9,11 @@ type gameStore = {
     setIsLast: (isLast: boolean) => void
     refetch: () => any
     setRefetch: (refetch: () => void) => void
+    collectedCakeSlices: [boolean, boolean, boolean, boolean]
+    addCollectedCakeSlice: (cakeSliceId: number) => void
+    resetCakeSlices: () => void
+    showQuestion: boolean
+    setShowQuestion: (showQuestion: boolean) => void
 }
 
 const useGameStore = create<gameStore>((set) => ({
@@ -20,6 +25,19 @@ const useGameStore = create<gameStore>((set) => ({
     setIsLast: (isLast: boolean) => set(() => ({ isLast })),
     refetch: () => undefined,
     setRefetch: (refetch: () => void) => set(() => ({ refetch })),
+    collectedCakeSlices: [false, false, false, false],
+    addCollectedCakeSlice: (cakeSliceId: number) => set((state) => {
+        const slices = state.collectedCakeSlices
+        slices[cakeSliceId] = true
+        return {
+            collectedCakeSlices: slices
+        }
+    }),
+    resetCakeSlices: () => set(() => ({
+        collectedCakeSlices: [false, false, false, false]
+    })),
+    showQuestion: false,
+    setShowQuestion: (showQuestion: boolean) => set(() => ({ showQuestion })),
 }))
 
 export default useGameStore
