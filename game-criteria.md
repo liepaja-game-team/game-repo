@@ -2,16 +2,16 @@
 
 **V1. (Kopā 2 punkti (1+1)) :**
 
-- [ ] **(1 punkts)** Programmas darbības sākumā ekrānā redzams titulkadrs, kurā norādīts spēles nosaukums, autors(-i) un uzaicinājums spēlēt spēli,
-- [ ] **(1 punkts)** kā arī vismaz divas pogas – “Par spēli” un “Sākt spēli” vai norāde par tastatūras taustiņu, kas jāpiespiež, lai attiecīgi iegūtu papildus informāciju par spēli vai sāktu spēli.
+- [x] **(1 punkts)** Programmas darbības sākumā ekrānā redzams titulkadrs, kurā norādīts spēles nosaukums, autors(-i) un uzaicinājums spēlēt spēli,
+- [x] **(1 punkts)** kā arī vismaz divas pogas – “Par spēli” un “Sākt spēli” vai norāde par tastatūras taustiņu, kas jāpiespiež, lai attiecīgi iegūtu papildus informāciju par spēli vai sāktu spēli.
 
 **V2. (Kopā 3 punkti (1+2)) :**
 
-- [ ] **(1 punkts)** Lietotājam piespiežot pogu “Par spēli” vai piespiežot tastatūras taustiņu, atveras logs ar spēles noteikumiem.
-- [ ] **(2 punkti)** par spēles noteikumu saprotamību, precizitāti, pilnību un noformējumu.
-- [ ] **V3. (1 punkts)** Logā “Par spēli” ir pieejama poga “Sākt spēli” vai norāde, kurš tastatūras taustiņš jāpiespiež, lai sāktu spēli.
+- [x] **(1 punkts)** Lietotājam piespiežot pogu “Par spēli” vai piespiežot tastatūras taustiņu, atveras logs ar spēles noteikumiem.
+- [x] **(2 punkti)** par spēles noteikumu saprotamību, precizitāti, pilnību un noformējumu.
+- [x] **V3. (1 punkts)** Logā “Par spēli” ir pieejama poga “Sākt spēli” vai norāde, kurš tastatūras taustiņš jāpiespiež, lai sāktu spēli.
 
-**V4. (Kopā 2 punkti): 
+**V4. (Kopā 2 punkti)**: 
 
 - [ ] (1 punkts)** Lietotājam (a) piespiežot pogu “Sākt spēli”, atveras logs ar tortes attēlu. Vai: (b) piespiežot spēles sākšanas taustiņu, ekrānā tiek uzzīmēta torte;
 - [ ] **(1 punkts)** Abos gadījumos ekrānā lietotājam ir iespēja izvēlēties kādu no tortes elementiem (odziņa, augļa šķēlīte, dekorējums u.tml.)
@@ -50,7 +50,7 @@
 
 **V9. (Kopā 3 punkti (2+1)) :**
 
-- [ ] **(2 punkti)** Pēc katra neveiksmīga mēģinājuma izpildīt spēles uzdevumu, samazinās iegūstamo punktu skaits, un
+- [x] **(2 punkti)** Pēc katra neveiksmīga mēģinājuma izpildīt spēles uzdevumu, samazinās iegūstamo punktu skaits, un
 - [ ] **(1 punkts)** lietotājam tiek dota iespēja ievadīt uzdevuma atbildi atkārtoti.
 
 - [ ] **V10.(2 punkti)** Spēlētājs nevar atteikties no tortes gabaliņa pirms nav sekmīgi izpildījis tajā doto uzdevumu.
@@ -59,7 +59,7 @@
 
 - [x] **P14.(5 punkti)** Katram toretes gabaliņam ir sagatavoti vairāki uzdevumi, katrā izspēles reizē programma nejauši izvēlas vienu no tiem, t.i., izspēlējot spēli atkārtoti spēlētājam būs jārisina citi uzdevumi.
 
-- [ ] **V11. (2 punkti)** Pēc sekmīgi izpildīta pēdējā tortes gabaliņa uzdevuma ekrānā tiek parādīta pateicība par spēli un nopelnīto punktu daudzums.
+- [x] **V11. (2 punkti)** Pēc sekmīgi izpildīta pēdējā tortes gabaliņa uzdevuma ekrānā tiek parādīta pateicība par spēli un nopelnīto punktu daudzums.
 
 - [x] **P15.(2 punkti)** Spēles noslēgumā programma izvada statistikas datus par spēli pēc autora(-u) ieskatiem.
 
