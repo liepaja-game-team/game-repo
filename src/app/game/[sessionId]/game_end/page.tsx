@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { useState } from "react";
+import SecondaryButton from "~/app/_components/SecondaryButton";
 import H1 from "~/app/_components/mdx/H1";
 import H2 from "~/app/_components/mdx/H2";
 import { api } from "~/trpc/react"
@@ -39,7 +40,7 @@ function UsernamePage({ params }: { params: { sessionId: string } }) {
     }
     return (
         <div className="flex flex-col">
-            <H1>Jūs ieguvāt <span className="text-active">{totalScore}</span> no 800 punktiem.</H1>
+            <H1>Paldies par spēli! Jūs ieguvāt <span className="text-active">{totalScore}</span> no 800 punktiem.</H1>
             <div className="bg-bgTertiary py-4 px-8 min-h-36 ">
                 <h2 className="text-h2 mb-2">Jūs varat piešķirt lietotājvārdu šai sesijai, lai to varētu redzēt sesiju sarakstā.</h2>
                 <div className="justify-between flex flex-col 
@@ -54,11 +55,9 @@ function UsernamePage({ params }: { params: { sessionId: string } }) {
                         </div>
                     </form>
                     <div className="">vai</div>
-                    <Link href="/" className="border-2 border-inactive text-inactive hover:text-primary 
-                hover:border-primary transition-colors duration-300 text-xl flex 
-                items-center px-4 rounded-lg text-center max-w-48 py-2 md:py-0 lg:py-2 ">
+                    <SecondaryButton href="/" className="md:py-0 lg:py-2">
                         Atpakaļ titullapa
-                    </Link>
+                    </SecondaryButton>
                 </div>
             </div>
         </div>

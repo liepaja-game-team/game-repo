@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { FaPlay } from "react-icons/fa";
+import MainButton from "./_components/MainButton";
+import SecondaryButton from "./_components/SecondaryButton";
 
 function Home() {
     return (
@@ -9,21 +11,14 @@ function Home() {
                 <p className="text-center">Spēlē par Liepāju</p>
             </div>
 
-            <Link href="/game"
-                className="text-2xl relative w-64"
-            >
-                <div className="pl-8 justify-between text-2xl flex items-center bg-info
-                relative hover:translate-y-0.5 active:translate-y-1.5 transition-transform duration-200">
-                    <span className="">Sākt spēlēt</span>
-                    <span className="px-4 py-4 bg-info relative">
-                        <FaPlay />
-                        <span className="absolute inset-0 bg-primary opacity-20" />
-                    </span>
-                </div>
-                <div className="absolute w-full -bottom-2 bg-info -z-20 h-1/3" >
-                    <div className="bg-black absolute inset-0 opacity-40" />
-                </div>
-            </Link>
+            <div className="flex gap-4">
+                <MainButton href="/game">
+                    Sākt spēli
+                </MainButton>
+                <SecondaryButton href="/about" className="translate-y-1">
+                    Par spēli
+                </SecondaryButton>
+            </div>
         </div>
     )
 }

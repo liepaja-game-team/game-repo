@@ -7,7 +7,7 @@
 
 **V2. (Kopā 3 punkti (1+2)) :**
 
-- [ ] **(1 punkts)** Lietotājam piespiežot pogu “Par spēli” vai piespiežot tastatūras taustiņu, atveras logs arspēles noteikumiem.
+- [ ] **(1 punkts)** Lietotājam piespiežot pogu “Par spēli” vai piespiežot tastatūras taustiņu, atveras logs ar spēles noteikumiem.
 - [ ] **(2 punkti)** par spēles noteikumu saprotamību, precizitāti, pilnību un noformējumu.
 - [ ] **V3. (1 punkts)** Logā “Par spēli” ir pieejama poga “Sākt spēli” vai norāde, kurš tastatūras taustiņš jāpiespiež, lai sāktu spēli.
 
@@ -18,35 +18,35 @@
 
 - [ ] **V5. (2 punkti)** Izvēloties kādu no tortes elementiem, spēlētājam jāveic kāds uzdevums – interaktīva animācija, tests, jautājums, kam jāiesniedz pareizā atbilde, vai cita aktivitāte.
 
-- [ ] **P1. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas pēdas Latvijā”. Spēles scenārijs ir autoru izvēle.
+- [x] **P1. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas pēdas Latvijā”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P2. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja - Latvijas galvaspilsēta”. Spēles scenārijs ir autoru izvēle.
+- [x] **P2. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja - Latvijas galvaspilsēta”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P3. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Izgaismotā Liepāja”. Spēles scenārijs ir autoru izvēle.
+- [x] **P3. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Izgaismotā Liepāja”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P4. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Izskrien Latviju Liepājā”. Spēles scenārijs ir autoru izvēle.
+- [x] **P4. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Izskrien Latviju Liepājā”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P5. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja – kā pa notīm!”. Spēles scenārijs ir autoru izvēle.
+- [x] **P5. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja – kā pa notīm!”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P6. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas menciņš”. Spēles scenārijs ir autoru izvēle.
+- [x] **P6. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas menciņš”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P7. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas tramvajs”. Spēles scenārijs ir autoru izvēle.
+- [x] **P7. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas tramvajs”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P8. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Līvas ciems”. Spēles scenārijs ir autoru izvēle.
+- [x] **P8. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Līvas ciems”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P9. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas izcilākie mūziķi”. Spēles scenārijs ir autoru izvēle.
+- [x] **P9. (līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas izcilākie mūziķi”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P10.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas festivāli”. Spēles scenārijs ir autoru izvēle.
+- [x] **P10.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas festivāli”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P11.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas teātris”. Spēles scenārijs ir autoru izvēle.
+- [x] **P11.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepājas teātris”. Spēles scenārijs ir autoru izvēle.
 
-- [ ] **P12.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja un Eiropa”. Spēles scenārijs ir autoru izvēle.
+- [x] **P12.(līdz 5 punktiem)** Izveidot spēles aktivitāti “Liepāja un Eiropa”. Spēles scenārijs ir autoru izvēle.
 
 - [ ] **V6. (2 punkti)** Programma neļauj lietotājam tortes gabaliņu, kas vienreiz jau paņemts.
 
-- [ ] **V7. (2 punkti)** Testa uzdevumus un atbilžu variantus (ja tādi paredzēti) programma nolasa no faila vai datubāzes.
+- [x] **V7. (2 punkti)** Testa uzdevumus un atbilžu variantus (ja tādi paredzēti) programma nolasa no faila vai datubāzes.
 
-- [ ] **V8. (2 punkti)** Par katru izpildīto testu, atrisināto uzdevumu vai paveikto spēles aktivitāti spēlētājs saņem punktus.
+- [x] **V8. (2 punkti)** Par katru izpildīto testu, atrisināto uzdevumu vai paveikto spēles aktivitāti spēlētājs saņem punktus.
 
 **V9. (Kopā 3 punkti (2+1)) :**
 
@@ -57,17 +57,17 @@
 
 - [ ] **P13. (4 punkti)** Ir nodrošināta iespēja lietotājam pirms spēles mainīt spēles uzdevumus (piemēram, skolotājs sagatavo skolēnu grupai jaunus uzdevums spēles atkārtotai izspēlei).
 
-- [ ] **P14.(5 punkti)** Katram toretes gabaliņam ir sagatavoti vairāki uzdevumi, katrā izspēles reizē programma nejauši izvēlas vienu no tiem, t.i., izspēlējot spēli atkārtoti spēlētājam būs jārisina citi uzdevumi.
+- [x] **P14.(5 punkti)** Katram toretes gabaliņam ir sagatavoti vairāki uzdevumi, katrā izspēles reizē programma nejauši izvēlas vienu no tiem, t.i., izspēlējot spēli atkārtoti spēlētājam būs jārisina citi uzdevumi.
 
 - [ ] **V11. (2 punkti)** Pēc sekmīgi izpildīta pēdējā tortes gabaliņa uzdevuma ekrānā tiek parādīta pateicība par spēli un nopelnīto punktu daudzums.
 
-- [ ] **P15.(2 punkti)** Spēles noslēgumā programma izvada statistikas datus par spēli pēc autora(-u) ieskatiem.
+- [x] **P15.(2 punkti)** Spēles noslēgumā programma izvada statistikas datus par spēli pēc autora(-u) ieskatiem.
 
 - [ ] **P16.(2 punkti)** Spēles noslēgumā programma izvada reālo laiku minūtēs un sekundēs, cik ilgi spēlētājs pavadījis spēlē.
 
-- [ ] **P17.(1 punkts)** Spēles noslēgumā spēlētājam tiek pajautāts ievadīt vārdu.
+- [X] **P17.(1 punkts)** Spēles noslēgumā spēlētājam tiek pajautāts ievadīt vārdu.
 
-- [ ] **P18.(2 punkti)** Spēlētāja vārds un spēles rezultāti (laiks, punkti u.c.) tiek saglabāti teksta failā vai datu bāzē.
+- [x] **P18.(2 punkti)** Spēlētāja vārds un spēles rezultāti (laiks, punkti u.c.) tiek saglabāti teksta failā vai datu bāzē.
 
 - [ ] **P19.(2 punkti)** Programma nodrošina lietotājam iespēju apskatīties 10 labākos spēles rezultātus – spēlētāja vārds, spēles laiks (minūtēs un sekundes) un punkti – sakārtotus pēc spēles laika augošā secībā.
 
