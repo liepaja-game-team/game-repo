@@ -40,10 +40,12 @@ function AnswerPicker({ answers }: AnswerPickerProps) {
 function AnswerButton({ children, onClick }: { children: React.ReactNode, onClick: () => void }) {
     return (
         <button
-            className="aspect-[3/1] bg-info"
+            className="aspect-[3/1] bg-info relative "
             onClick={onClick}
         >
-            {children}
+            <div className="bg-bgBase absolute w-full h-full top-0 left-0 z-10 
+            opacity-0 hover:opacity-10 active:opacity-20 transition-all duration-300" />
+            <span className="relative z-20">{children}</span>
         </button>
     )
 }
