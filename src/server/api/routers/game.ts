@@ -19,8 +19,8 @@ export const gameRouter = createTRPCRouter({
             const taskData = matter(game)
             return {
                 content: taskData.content,
-                answers: taskData.data["answers"],
-                title: taskData.data["title"]
+                answers: taskData.data.answers,
+                title: taskData.data.title
             }
         }),
     getTitleById: publicProcedure
@@ -35,7 +35,7 @@ export const gameRouter = createTRPCRouter({
             }
             const taskData = matter(game)
             return {
-                title: taskData.data["title"]
+                title: taskData.data.title
             }
         }),
     sendAnswer: publicProcedure
@@ -50,20 +50,26 @@ export const gameRouter = createTRPCRouter({
                     id: input.sessionId
                 },
                 select: {
-                    scores: true
+                    scores: true,
+                    completed_games: true
                 }
             })
-
-            const gameFile = await getGameFileById(input.gameId)
-            const rightAnswerIndex = matter(gameFile).data["right_answer"]
-            const score = rightAnswerIndex === input.answerIndex ? 200 : 0
-
             if (!session) {
                 throw new TRPCError({
                     code: "NOT_FOUND",
                     message: "Session with provided id was not found."
                 })
             }
+            if (session.completed_games.length <= session.scores.length) {
+                throw new TRPCError({
+                    code: "BAD_REQUEST",
+                    message: "This session already have answer for this game."
+                })
+            }
+
+            const gameFile = await getGameFileById(input.gameId)
+            const rightAnswerIndex = matter(gameFile).data.right_answer
+            const score = rightAnswerIndex === input.answerIndex ? 200 : 0
 
             const updatedSession = await ctx.db.session.update({
                 data: {

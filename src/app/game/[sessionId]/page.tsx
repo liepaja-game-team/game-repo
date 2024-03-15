@@ -5,7 +5,7 @@ import GameRenderer from "./_components/GameRenderer"
 import { redirect } from "next/navigation"
 import useGameStore from "./gameStore"
 
-function page({ params }: { params: { sessionId: string } }) {
+function SessionPage({ params }: { params: { sessionId: string } }) {
     const setsessionId = useGameStore(state => state.setsessionId)
     const setGameId = useGameStore(state => state.setGameId)
     const setIsLast = useGameStore(state => state.setIsLast)
@@ -28,7 +28,7 @@ function page({ params }: { params: { sessionId: string } }) {
     setsessionId(+params.sessionId)
     setGameId(gameIdData.gameID)
     setIsLast(gameIdData.isLast)
-    setRefetch(refetch)
+    setRefetch(() => { void refetch() })
 
 
     return (
@@ -36,4 +36,4 @@ function page({ params }: { params: { sessionId: string } }) {
     )
     // return <GameRenderer gameId={2} isLast={false} sessionId={params.sessionId} refetch={refetch} />
 }
-export default page
+export default SessionPage

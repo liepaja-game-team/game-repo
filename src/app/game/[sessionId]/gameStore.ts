@@ -7,7 +7,7 @@ type gameStore = {
     setGameId: (gameId: number | undefined) => void
     isLast: boolean
     setIsLast: (isLast: boolean) => void
-    refetch: () => void
+    refetch: () => any
     setRefetch: (refetch: () => void) => void
 }
 
@@ -18,7 +18,7 @@ const useGameStore = create<gameStore>((set) => ({
     setGameId: (gameId: number | undefined) => set(() => ({ gameId })),
     isLast: false,
     setIsLast: (isLast: boolean) => set(() => ({ isLast })),
-    refetch: () => { },
+    refetch: () => undefined,
     setRefetch: (refetch: () => void) => set(() => ({ refetch })),
 }))
 
